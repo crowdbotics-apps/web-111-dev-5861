@@ -8,33 +8,6 @@ from django.db import models
 
 class CustomText(models.Model):
     title = models.CharField(max_length=150,)
-    jhgjhgsghfhfg = models.OneToOneField(
-        "home.HomePage",
-        on_delete=models.CASCADE,
-        null=True,
-        blank=True,
-        related_name="customtext_jhgjhgsghfhfg",
-    )
-    hsgfhadgfa = models.ManyToManyField(
-        "users.User", blank=True, related_name="customtext_hsgfhadgfa",
-    )
-    jhgdfjhgsafa = models.ForeignKey(
-        settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE,
-        null=True,
-        blank=True,
-        related_name="customtext_jhgdfjhgsafa",
-    )
-    jhgdskghaef = models.OneToOneField(
-        settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE,
-        null=True,
-        blank=True,
-        related_name="customtext_jhgdskghaef",
-    )
-    nshgdfjagsfa = models.ManyToManyField(
-        "home.CustomText", blank=True, related_name="customtext_nshgdfjagsfa",
-    )
 
     def __str__(self):
         return self.title
